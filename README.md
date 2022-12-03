@@ -1,4 +1,0 @@
-Portafolio
-Johnny Sobarzo
-
-Sustantiva 
