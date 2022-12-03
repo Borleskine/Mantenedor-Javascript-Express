@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Pixelmart CL</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logo.png" alt="">
+            <div>
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">GitHub</a>
+                          </ul>
+                        </div>
+                      </nav>
+            </div>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    <!-- <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/mar.png" alt="">
+                    <p><span>10990</span>$</p>
+                </div>
+                <p class="title"> Peluche Mario Bros 25 cm</p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/amp.png" alt="">
+                    <p><span>9990</span>$</p>
+                </div>
+                <p class="title"> Peluche Ampharos 16 cm</p>
+                <a href="" class="btn-add-cart" data-id="2">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/aka.png" alt="">
+                    <p><span>26990</span>$</p>
+                </div>
+                <p class="title"> Set Akatsuki + accesorios</p>
+                <a href="" data-id="3" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/kir.png" alt="">
+                    <p><span>24990</span>$</p>
+                </div>
+                <p class="title"> Pack Peluches Kirby y amigos</p>
+                <a href="" data-id="4" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/bow.png" alt="">
+                    <p><span>16990</span>$</p>
+                </div>
+                <p class="title"> Peluche Bowser nintendo 25 cm</p>
+                <a href="" data-id="5" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/sno.png" alt="">
+                    <p><span>14990</span>$</p>
+                </div>
+                <p class="title"> Peluche Snorlax reversible Ditto 20 cm</p>
+                <a href="" data-id="6" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/rei.png" alt="">
+                    <p><span>14990</span>$</p>
+                </div>
+                <p class="title"> Rei chikita 20 cm</p>
+                <a href="" data-id="7" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/syl.png" alt="">
+                    <p><span>10990</span>$</p>
+                </div>
+                <p class="title"> Peluche Sylveon pokemon 20 cm</p>
+                <a href="" data-id="8" class="btn-add-cart">Agregar a carrito</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="author">🪐 por <a href="https://github.com/Borleskine" target="_blank">Johnny Sobarzo</a></p>
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./javascript.js" ></script>
+</body>
+</html>
